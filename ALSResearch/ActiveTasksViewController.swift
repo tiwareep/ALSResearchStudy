@@ -22,7 +22,7 @@ class ActiveTasksViewController: UITableViewController,ORKTaskViewControllerDele
         if ((indexPath as NSIndexPath).row == 0){
             let taskViewController = ORKTaskViewController(task: FingerTappingTask, taskRun: nil)
             taskViewController.delegate = self
-            taskViewController.outputDirectory=NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] , isDirectory: true) as URL
+            
             present(taskViewController, animated: true, completion: nil)
         }
         else if ((indexPath as NSIndexPath).row == 1){
@@ -39,12 +39,38 @@ class ActiveTasksViewController: UITableViewController,ORKTaskViewControllerDele
         print(taskViewController.result)
         //print(taskViewController.outputDirectory.)
         print("Results ");
-        saveData(step_result: taskViewController.result)
+        
+        
+            parseResult(step_result: (taskViewController.result.stepResult(forStepIdentifier: "tapping.right")?.results)!)
+            parseResult(step_result: (taskViewController.result.stepResult(forStepIdentifier: "tapping.left")?.results)!)
+        
+        
+        //saveData(step_result: taskViewController.result)
         
         taskViewController.dismiss(animated: true, completion: nil)
         
     }
-    func saveData(step_result:ORKResult){
+    func parseResult(step_result:[ORKResult]){
+        print("Parsed Result")
+        
+        for result in step_result{
+            let r = result as! ORKTappingIntervalResult
+            for sample in r.samples!{
+                print(sample.buttonIdentifier.rawValue)
+                print(sample.location)
+                print(sample.timestamp)
+                self.saveData(button: sample.buttonIdentifier.rawValue,location: sample.location,timestamp: sample.timestamp)
+                
+            }
+            
+        }
+        /*var r=step_result as? ORKTappingIntervalResult
+        r.
+        step_result.result(forIden)
+        let emailStepResult = result?.result(forIdentifier: ORKRegistrationFormItemIdentifierEmail) as? ORKTextQuestionResult*/
+        
+    }
+    func saveData(button:Int,location:CGPoint,timestamp:Double){
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
@@ -63,7 +89,10 @@ class ActiveTasksViewController: UITableViewController,ORKTaskViewControllerDele
         
         
         
-        data_values.setValue(String(describing: step_result), forKeyPath: "result")
+        data_values.setValue(String(describing: NSDate()), forKeyPath: "date")
+        data_values.setValue(String(describing: button),forKeyPath:"button")
+        data_values.setValue(String(describing: location),forKeyPath:"location")
+        data_values.setValue(String(describing: timestamp),forKeyPath:"timestamp")
         
         
         do {

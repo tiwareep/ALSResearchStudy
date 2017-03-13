@@ -20,13 +20,10 @@ public var ConsentDocument: ORKConsentDocument {
     consentDocument.title = consentDetail.documentTitle
     
     let consentSectionTypes: [ORKConsentSectionType] = [
-        .overview,
         .dataGathering,
         .privacy,
         .dataUse,
         .timeCommitment,
-        .studySurvey,
-        .studyTasks,
         .withdrawing
     ]
     
@@ -34,17 +31,17 @@ public var ConsentDocument: ORKConsentDocument {
         let consentSection = ORKConsentSection(type: contentSectionType)
         
         
-        if consentSection.type == .overview {
+        /*if consentSection.type == .overview {
             consentSection.summary = consentDetail.sectionTypeOverview.summary
             consentSection.content = consentDetail.sectionTypeOverview.content
             
-        }
+        }*/
         
-        if consentSection.type == .studySurvey {
+        /*if consentSection.type == .studySurvey {
             consentSection.summary = consentDetail.sectionTypeStudySurvey.summary
             consentSection.content = consentDetail.sectionTypeStudySurvey.content
         }
-        
+        */
         if consentSection.type == .dataGathering {
             consentSection.summary = consentDetail.sectionTypeDataGathering.summary
             consentSection.content = consentDetail.sectionTypeDataGathering.content
@@ -69,10 +66,10 @@ public var ConsentDocument: ORKConsentDocument {
             consentSection.summary = consentDetail.sectionTypeWithdrawing.summary
             consentSection.content = consentDetail.sectionTypeWithdrawing.content
         }
-        if consentSection.type == .studyTasks {
+        /*if consentSection.type == .studyTasks {
             consentSection.summary = consentDetail.sectionTypeStudyTasks.summary
             consentSection.content = consentDetail.sectionTypeStudyTasks.content
-        }
+        }*/
         return consentSection
     }
     consentDocument.sections = consentSections

@@ -9,7 +9,7 @@
 
 import ResearchKit
 public var FingerTappingTask: ORKOrderedTask {
-    return ORKOrderedTask.twoFingerTappingIntervalTask(withIdentifier: "TappingTest", intendedUseDescription: "To measure the accuracy of motor functions", duration: 5, handOptions: ORKPredefinedTaskHandOption.both, options: ORKPredefinedTaskOption())
+    return ORKOrderedTask.twoFingerTappingIntervalTask(withIdentifier: "TappingTest", intendedUseDescription: "Analyse the muscle movement of hands.", duration: 5, handOptions: ORKPredefinedTaskHandOption.both, options: ORKPredefinedTaskOption())
     
 }
 
