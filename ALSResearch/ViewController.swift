@@ -40,9 +40,8 @@ extension ViewController : ORKTaskViewControllerDelegate {
             let vc : UIViewController! = self.storyboard!.instantiateViewController(withIdentifier: "taskListViewController")
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case .discarded, .failed, .saved :
-            let vc : UIViewController! = self.storyboard!.instantiateViewController(withIdentifier: "startViewController")
-            self.navigationController?.pushViewController(vc, animated: true)
+        case .discarded, .failed, .saved : break
+            
         }
     }
     

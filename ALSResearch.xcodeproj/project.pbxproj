@@ -17,15 +17,15 @@
 		D91A12871E75D72D007BB24E /* ALSResearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12861E75D72D007BB24E /* ALSResearchUITests.swift */; };
 		D91A12A81E75D76D007BB24E /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91A12A51E75D768007BB24E /* ResearchKit.framework */; };
 		D91A12A91E75D76D007BB24E /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91A12A51E75D768007BB24E /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D91A12B51E75D880007BB24E /* ConsentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12AE1E75D880007BB24E /* ConsentDetails.swift */; };
-		D91A12B61E75D880007BB24E /* ReviewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12AF1E75D880007BB24E /* ReviewDetails.swift */; };
-		D91A12B71E75D880007BB24E /* ConsentSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12B01E75D880007BB24E /* ConsentSharing.swift */; };
-		D91A12B81E75D880007BB24E /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12B21E75D880007BB24E /* ConsentTask.swift */; };
-		D91A12B91E75D880007BB24E /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12B31E75D880007BB24E /* ConsentDocument.swift */; };
-		D91A12BC1E75D9CA007BB24E /* ActiveTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12BA1E75D9CA007BB24E /* ActiveTasksViewController.swift */; };
-		D91A12BD1E75D9CA007BB24E /* FingerTappingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12BB1E75D9CA007BB24E /* FingerTappingTask.swift */; };
 		D91A12C51E75DF75007BB24E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91A12C41E75DF75007BB24E /* CoreMotion.framework */; };
-		D91A12CB1E75E7C7007BB24E /* StepCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12CA1E75E7C7007BB24E /* StepCountViewController.swift */; };
+		D91A12DA1E764A06007BB24E /* ActiveTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12D71E764A06007BB24E /* ActiveTasksViewController.swift */; };
+		D91A12DB1E764A06007BB24E /* FingerTappingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12D81E764A06007BB24E /* FingerTappingTask.swift */; };
+		D91A12DC1E764A06007BB24E /* StepCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12D91E764A06007BB24E /* StepCountViewController.swift */; };
+		D91A12E11E764A5C007BB24E /* ConsentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12DD1E764A5C007BB24E /* ConsentDetails.swift */; };
+		D91A12E21E764A5C007BB24E /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12DE1E764A5C007BB24E /* ConsentDocument.swift */; };
+		D91A12E31E764A5C007BB24E /* ConsentSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12DF1E764A5C007BB24E /* ConsentSharing.swift */; };
+		D91A12E41E764A5C007BB24E /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12E01E764A5C007BB24E /* ConsentTask.swift */; };
+		D91A12E61E764A68007BB24E /* ReviewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A12E51E764A68007BB24E /* ReviewDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,15 +96,15 @@
 		D91A12861E75D72D007BB24E /* ALSResearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALSResearchUITests.swift; sourceTree = "<group>"; };
 		D91A12881E75D72D007BB24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91A129E1E75D768007BB24E /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../../Downloads/ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
-		D91A12AE1E75D880007BB24E /* ConsentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDetails.swift; sourceTree = "<group>"; };
-		D91A12AF1E75D880007BB24E /* ReviewDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDetails.swift; sourceTree = "<group>"; };
-		D91A12B01E75D880007BB24E /* ConsentSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentSharing.swift; sourceTree = "<group>"; };
-		D91A12B21E75D880007BB24E /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
-		D91A12B31E75D880007BB24E /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
-		D91A12BA1E75D9CA007BB24E /* ActiveTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveTasksViewController.swift; path = ../../HealthTechApp/HealthTechApp/ActiveTasksViewController.swift; sourceTree = "<group>"; };
-		D91A12BB1E75D9CA007BB24E /* FingerTappingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FingerTappingTask.swift; path = ../../HealthTechApp/HealthTechApp/FingerTappingTask.swift; sourceTree = "<group>"; };
 		D91A12C41E75DF75007BB24E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D91A12CA1E75E7C7007BB24E /* StepCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepCountViewController.swift; path = ../../HealthTechApp/HealthTechApp/StepCountViewController.swift; sourceTree = "<group>"; };
+		D91A12D71E764A06007BB24E /* ActiveTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveTasksViewController.swift; sourceTree = "<group>"; };
+		D91A12D81E764A06007BB24E /* FingerTappingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerTappingTask.swift; sourceTree = "<group>"; };
+		D91A12D91E764A06007BB24E /* StepCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepCountViewController.swift; sourceTree = "<group>"; };
+		D91A12DD1E764A5C007BB24E /* ConsentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDetails.swift; sourceTree = "<group>"; };
+		D91A12DE1E764A5C007BB24E /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		D91A12DF1E764A5C007BB24E /* ConsentSharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentSharing.swift; sourceTree = "<group>"; };
+		D91A12E01E764A5C007BB24E /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		D91A12E51E764A68007BB24E /* ReviewDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,12 +159,16 @@
 		D91A12621E75D72C007BB24E /* ALSResearch */ = {
 			isa = PBXGroup;
 			children = (
-				D91A12B41E75D880007BB24E /* Consent */,
+				D91A12E51E764A68007BB24E /* ReviewDetails.swift */,
+				D91A12DD1E764A5C007BB24E /* ConsentDetails.swift */,
+				D91A12DE1E764A5C007BB24E /* ConsentDocument.swift */,
+				D91A12DF1E764A5C007BB24E /* ConsentSharing.swift */,
+				D91A12E01E764A5C007BB24E /* ConsentTask.swift */,
 				D91A12631E75D72C007BB24E /* AppDelegate.swift */,
-				D91A12BA1E75D9CA007BB24E /* ActiveTasksViewController.swift */,
-				D91A12BB1E75D9CA007BB24E /* FingerTappingTask.swift */,
+				D91A12D71E764A06007BB24E /* ActiveTasksViewController.swift */,
+				D91A12D81E764A06007BB24E /* FingerTappingTask.swift */,
+				D91A12D91E764A06007BB24E /* StepCountViewController.swift */,
 				D91A12651E75D72C007BB24E /* ViewController.swift */,
-				D91A12CA1E75E7C7007BB24E /* StepCountViewController.swift */,
 				D91A12671E75D72C007BB24E /* Main.storyboard */,
 				D91A126D1E75D72C007BB24E /* Assets.xcassets */,
 				D91A126F1E75D72C007BB24E /* LaunchScreen.storyboard */,
@@ -200,27 +204,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		D91A12B11E75D880007BB24E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D91A12AE1E75D880007BB24E /* ConsentDetails.swift */,
-				D91A12AF1E75D880007BB24E /* ReviewDetails.swift */,
-				D91A12B01E75D880007BB24E /* ConsentSharing.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		D91A12B41E75D880007BB24E /* Consent */ = {
-			isa = PBXGroup;
-			children = (
-				D91A12B11E75D880007BB24E /* Model */,
-				D91A12B21E75D880007BB24E /* ConsentTask.swift */,
-				D91A12B31E75D880007BB24E /* ConsentDocument.swift */,
-			);
-			name = Consent;
-			path = "/Users/arpitsabherwal/Desktop/iOS Development Projects/HealthTechApp/HealthTechApp/../../ResearchKitNovartis/ResearchKitNovartis";
-			sourceTree = "<absolute>";
 		};
 		D91A12C31E75DF74007BB24E /* Frameworks */ = {
 			isa = PBXGroup;
@@ -391,16 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91A12661E75D72C007BB24E /* ViewController.swift in Sources */,
-				D91A12B91E75D880007BB24E /* ConsentDocument.swift in Sources */,
+				D91A12E31E764A5C007BB24E /* ConsentSharing.swift in Sources */,
 				D91A126C1E75D72C007BB24E /* ALSResearch.xcdatamodeld in Sources */,
 				D91A12641E75D72C007BB24E /* AppDelegate.swift in Sources */,
-				D91A12B81E75D880007BB24E /* ConsentTask.swift in Sources */,
-				D91A12B71E75D880007BB24E /* ConsentSharing.swift in Sources */,
-				D91A12BC1E75D9CA007BB24E /* ActiveTasksViewController.swift in Sources */,
-				D91A12BD1E75D9CA007BB24E /* FingerTappingTask.swift in Sources */,
-				D91A12B61E75D880007BB24E /* ReviewDetails.swift in Sources */,
-				D91A12B51E75D880007BB24E /* ConsentDetails.swift in Sources */,
-				D91A12CB1E75E7C7007BB24E /* StepCountViewController.swift in Sources */,
+				D91A12E61E764A68007BB24E /* ReviewDetails.swift in Sources */,
+				D91A12E21E764A5C007BB24E /* ConsentDocument.swift in Sources */,
+				D91A12DA1E764A06007BB24E /* ActiveTasksViewController.swift in Sources */,
+				D91A12DB1E764A06007BB24E /* FingerTappingTask.swift in Sources */,
+				D91A12E41E764A5C007BB24E /* ConsentTask.swift in Sources */,
+				D91A12DC1E764A06007BB24E /* StepCountViewController.swift in Sources */,
+				D91A12E11E764A5C007BB24E /* ConsentDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +637,7 @@
 				D91A128D1E75D72D007BB24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D91A128E1E75D72D007BB24E /* Build configuration list for PBXNativeTarget "ALSResearchTests" */ = {
 			isa = XCConfigurationList;
@@ -662,6 +646,7 @@
 				D91A12901E75D72D007BB24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D91A12911E75D72D007BB24E /* Build configuration list for PBXNativeTarget "ALSResearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -670,6 +655,7 @@
 				D91A12931E75D72D007BB24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
